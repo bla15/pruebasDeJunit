@@ -19,7 +19,7 @@ public class conexionBD {
 	 */
 	public void connect(){
 
-		try {
+	/*	try {
 			Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
 			con = DriverManager.getConnection(url, user, password);
 			Statement stt = con.createStatement();
@@ -31,21 +31,28 @@ public class conexionBD {
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}	
+		}
+		*/
+		System.out.println("eeeeeeee");
 	}
 
 	/**
 	 * Desconectarse del archivo sqlite.De la base de datos.
 	 */
 	public void disconnect() {
+		
+		/**
 		try {
 			con.close();
 		} catch (SQLException e) {
-		}
+		}*/
+		System.out.println("eeeeeeeeeeeeeeeeeee");
+		
 	}
 	
 	public void crearTablaUsuarios(){
 
+		/*
 		try {
 			
 			Statement stt = con.createStatement();
@@ -71,6 +78,9 @@ public class conexionBD {
 			// TODO: handle exception
 			e.printStackTrace();
 		}
+*/
+		System.out.println("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
 
 	}
+		
 }

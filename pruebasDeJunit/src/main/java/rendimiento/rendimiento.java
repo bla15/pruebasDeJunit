@@ -2,7 +2,7 @@ package rendimiento;
 
 public class rendimiento {
 	
-	final conexionBD objConversor = new conexionBD();
+	private conexionBD objConversor = new conexionBD();
 
 
 	public void cargarDatos() throws ClassNotFoundException 
@@ -20,29 +20,17 @@ public class rendimiento {
 		objConversorDos.connect();
 		objConversorDos.crearTablaUsuarios();
 		objConversorDos.disconnect();
+		
+		
+		
 	}
+	public void metodoMalo2() throws ClassNotFoundException 
+	{
+		conexionBD objConversortres = new conexionBD();
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		rendimiento uno = new rendimiento();
-		try {
-			uno.cargarDatos();
-			uno.cargarDatos();
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		try {
-			uno.metodoMalo();
-			uno.metodoMalo();
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		
-		
+		objConversortres.connect();
+		objConversortres.crearTablaUsuarios();
+		objConversortres.disconnect();
 	}
 
 }
