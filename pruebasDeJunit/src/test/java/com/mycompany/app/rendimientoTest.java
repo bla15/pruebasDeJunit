@@ -7,6 +7,7 @@ import org.junit.Rule;
 import org.junit.Test;
 
 import rendimiento.metodoBueno;
+import rendimiento.metodoMalo;
 
 public class rendimientoTest {
 	@Rule
@@ -19,12 +20,19 @@ public class rendimientoTest {
 	@Required(max = 12000, average = 2500)
 	// requeisitos de rendimiento
 	public void test1() throws Exception {
-		metodoBueno uno = new metodoBueno();
-		for(int i=0;i<300;i++ ){
-			uno.conectarseBueno();
-
+		metodoBueno r =new metodoBueno();
+		try {
+			
+				
+				r.conectarseBueno();
+				
+			
+			
+			
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-
 		
 
 		

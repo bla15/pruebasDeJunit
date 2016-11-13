@@ -8,6 +8,7 @@ import org.databene.contiperf.junit.ContiPerfRule;
 import org.junit.Rule;
 import org.junit.Test;
 
+import rendimiento.metodoBueno;
 import rendimiento.metodoMalo;
 
 
@@ -23,14 +24,18 @@ public class rendiminetoMaloTest {
 	@Required(max = 12000, average = 2500)
 	// requeisitos de rendimiento
 	public void test1() throws Exception {
-
-
-		for(int i=0;i<300;i++ ){
-
-			metodoMalo d = new metodoMalo();
-
-			d.ConectarseMalo();
-
+		metodoMalo r =new metodoMalo();
+		try {
+			
+				
+				r.ConectarseMalo();
+				
+			
+			
+			
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 		
 
