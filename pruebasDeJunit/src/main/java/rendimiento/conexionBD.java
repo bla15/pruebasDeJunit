@@ -19,7 +19,7 @@ public class conexionBD {
 	 */
 	public void connect(){
 
-	/*	try {
+		try {
 			Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
 			con = DriverManager.getConnection(url, user, password);
 			Statement stt = con.createStatement();
@@ -32,8 +32,8 @@ public class conexionBD {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		*/
-		System.out.println("eeeeeeee");
+		
+		System.out.println("connect");
 	}
 
 	/**
@@ -41,18 +41,18 @@ public class conexionBD {
 	 */
 	public void disconnect() {
 		
-		/**
+		
 		try {
 			con.close();
 		} catch (SQLException e) {
-		}*/
-		System.out.println("eeeeeeeeeeeeeeeeeee");
+		}
+		System.out.println("disconect");
 		
 	}
 	
 	public void crearTablaUsuarios(){
 
-		/*
+	
 		try {
 			
 			Statement stt = con.createStatement();
@@ -72,14 +72,13 @@ public class conexionBD {
 
 			stt.close();
 			//prep.close();
-			con.close();
 			
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
 		}
-*/
-		System.out.println("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
+
+		System.out.println("table");
 
 	}
 		

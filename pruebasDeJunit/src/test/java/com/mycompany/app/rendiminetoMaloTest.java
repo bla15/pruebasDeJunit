@@ -8,7 +8,8 @@ import org.databene.contiperf.junit.ContiPerfRule;
 import org.junit.Rule;
 import org.junit.Test;
 
-import rendimiento.rendimiento;
+import rendimiento.metodoMalo;
+
 
 public class rendiminetoMaloTest {
 
@@ -25,15 +26,11 @@ public class rendiminetoMaloTest {
 
 
 		for(int i=0;i<300;i++ ){
-			rendimiento uno = new rendimiento();
 
-			uno.metodoMalo();
-			rendimiento d = new rendimiento();
+			metodoMalo d = new metodoMalo();
 
-			d.metodoMalo();
-			rendimiento dd = new rendimiento();
+			d.ConectarseMalo();
 
-			dd.metodoMalo();
 		}
 		
 
