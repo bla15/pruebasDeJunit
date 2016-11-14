@@ -33,7 +33,6 @@ public class conexionBD {
 			e.printStackTrace();
 		}
 		
-		System.out.println("connect");
 	}
 
 	/**
@@ -46,7 +45,6 @@ public class conexionBD {
 			con.close();
 		} catch (SQLException e) {
 		}
-		System.out.println("disconect");
 		
 	}
 	
@@ -77,8 +75,6 @@ public class conexionBD {
 			// TODO: handle exception
 			e.printStackTrace();
 		}
-
-		System.out.println("table");
 
 	}
 		

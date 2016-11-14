@@ -29,6 +29,11 @@ public class rendiminetoMaloTest {
 			
 				
 				r.ConectarseMalo();
+				r.ConectarseMalo();
+				r.ConectarseMalo();
+				r.ConectarseMalo();
+				r.ConectarseMalo();
+	
 				
 			
 			

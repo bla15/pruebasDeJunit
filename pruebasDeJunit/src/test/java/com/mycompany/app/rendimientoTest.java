@@ -25,7 +25,10 @@ public class rendimientoTest {
 			
 				
 				r.conectarseBueno();
-				
+				r.conectarseBueno();
+				r.conectarseBueno();
+				r.conectarseBueno();
+				r.conectarseBueno();
 			
 			
 			
